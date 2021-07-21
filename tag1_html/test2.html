@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!--Beispiel inline-CSS-->
+
+<body style="background-color: blue;">
+    <!--Bilder 
+        
+        freigestellt = heißt Objekt mit weißem Hintergrund oder unwichtigen Hintergrund
+        jpg =   komprimiert (Fotos, pixelorientiert, nicht freistellbar)
+        png =   (Fotos, Grafiken, Logos(freigestellt), transparent)
+        gif =   Animationen, wenig Farben, freistellen, harte transparent
+        svg =   Vektororientiert, Logos, Gestaltung, Diagramme
+        bmp =   pixelorientiert
+    -->
+
+<!--    Seite direkt vom Testumgebung Server aufrufen
+        C:xampp/htdocs/schule/tag_3/test.html
+        Xampp starten
+        localhost/schule/tag_3/test.html
+-->
+
+<h2>Images</h2>
+<img width="300px" src="flugzeug_0020.gif" alt="Ein animierter Flugzeug hinter einem weißem Hintergrund">
+<!--alt= ist ein Webreader beschreibung des Bildes-->
+
+<img width="300px" src="waterGlass.svg">
+<img width="300px" src="smiley.png">
+<img width="300px" src="interstellar.jpg">
+
+<h2>Video</h2>
+
+<figur>
+
+    <video width="600px" controls autoplay loop poster="still.jpg">
+
+        <source src="video/reel.mp4" type="video/mp4">
+        <source src="video/reel.ogv" type="video/ogg">
+        <!--ogg mit Video ist ogv-->
+    </video>
+
+    <figcaption>Eingebettetes Video</figcaption>
+
+</figur>
+
+<h2>Audio</h2>
+
+<figur>
+
+    <audio controls autoplay loop>
+
+        <source src="audio/catamaran.mp3" type="audio/mp3">
+        <source src="video/catamaran.ogg" type="audio/ogg">
+       
+         Ihr Browser unterstützt diese Formate/Audio 
+
+    </audio>
+
+    <figcaption>Eingebettete Audio</figcaption>
+
+</figur>
+
+
+</body>
+</html>

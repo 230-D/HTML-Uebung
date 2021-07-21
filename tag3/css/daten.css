@@ -1,0 +1,135 @@
+/* C:/xampp/htdocs/tag3/css/daten.css */
+
+ *{              /*Allen Elemnte/tags werden dieses CSS zugewiesen */
+                
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                }
+            
+            body{
+                font-size: 20px;
+            
+                }    
+
+
+            h2{                              /* Element Selector für CSS Klasse */
+                color: green;
+
+                }
+            
+            div{ 
+
+                width: 100px;
+                height: 100px;
+                background-color: aqua;
+
+                }
+            
+            article{
+
+                font-size: 10px;
+
+
+                    }
+
+            .xyz_1{       /*CSS Klasse mit eigenem Namen */
+
+                background-color: darkorange;
+
+                    }
+
+            .myborder{
+
+                border: 2px solid yellow;
+                        
+                        }
+
+            .bold{
+                font-weight: bold;
+                    }
+
+            #absatz{                /* ID Selector # mit Klassennamen */
+
+                color: blue;
+                font-size: 20px;
+
+                    }
+
+            #absatz_1{              /* Einmaliger Name für ID*/
+
+                        color: red;
+                        font-size: 20px;
+
+                        }
+            
+                    /* Man kann die Selectoren mit einem Komma kombinieren
+                                 Beispiel: .myborder,#id_div{}       */
+
+            .myborder,
+            #id_div{
+
+                text-align: center;
+
+            }
+
+             
+
+            body div section img{
+
+                width: 300px;
+            }
+
+            #absatz_2 { /*   Sollte sich zwei Selectoren mit dem gleichen Namen gleichen
+                                wird die erste zum Teil überschrieben und 
+                                    die jüngste weiter untenliegende Ergänzt 
+                                        Siehe #absatz_2 */
+
+                color:green;
+            }             
+                 
+            .themen{
+
+                width: 300px;
+                background-color: silver;
+                color: green;
+                border-radius: 10px;
+                padding: 5px 5px 5px 5px;              /*padding= 0=oben 0=rechts 0=unten 0=links*/
+                margin-top: 10px;  
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); 
+                    }
+           
+            .themen h2{
+                    margin: 0 0 5px 0;
+                    color:indigo;
+                    }
+            
+            .themen a{
+                        color:red;
+                        background:yellowgreen;
+                        padding: 0 3px 0 3px;
+                        border-radius: 3px;
+                        text-decoration: none;
+
+                    }
+
+            themen a:hover{
+                                background-color: teal;
+
+                            }
+
+
+
+            .themen img{
+                            width: 100px;
+                            float:left;
+                            margin: 0 10px 0 0;
+                            border: 1px solid black;
+
+                        }                          
+
+            .themen img:hover{
+                                width: 100px;
+                                transform: scale(2);
+                                cursor: pointer;
+
+                                 }

@@ -1,0 +1,64 @@
+*,h1{
+	
+	margin:0;
+	
+	}
+
+.grid-box{
+	
+	width: 100vw;								/*View width Browserbreite*/
+	height: 100vh;								/*View height Browserhöhe*/
+	display: grid;
+	grid-template-columns: auto auto 150px;		/*Horizontal/Spalten*/
+	grid-template-rows:	80px 40px auto 60px;	/*Vertikal/Zeilen*/
+	grid-template-areas:
+	"kopf kopf kopf"
+	"nav nav nav"
+	"m m aside"
+	"f f f";
+
+	
+			}
+			
+			
+header{
+	
+	grid-area:kopf;
+	/*background-color: blue;*/
+		
+		}
+		
+nav{
+	grid-area: nav;
+	background-color: yellow;
+	
+	}		
+	
+main{
+	grid-area: m;
+	background-color:silver;
+	
+	}	
+
+aside{
+	grid-area: aside;
+	background-color:green;
+	
+		}
+footer{
+	
+	grid-area:f;
+	background-color:brown;
+	
+		}
+
+header{
+		background:url(../img/10ibm.png) no-repeat;
+		background-size:cover;
+		}
+
+
+
+	
+	
+	

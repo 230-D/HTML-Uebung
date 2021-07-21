@@ -1,0 +1,109 @@
+/*Responsive Design CSS Mediaqueries - Smartphone Ansicht*/
+@media only screen and (max-width:600px)
+{	/* 40 Pixel höhe mind maximal was reinpasst*/
+	.grid-box{
+				grid-template-columns: auto;
+				grid-template-rows:80px min-content auto auto 60px;
+				grid-template-areas:
+				"kopf"
+				"nav"
+				"m"
+				"aside"
+				"f";
+															
+				}
+
+	li{
+		display:block; /*untereinander*/
+		
+		}
+
+	nav ul{
+			padding:0;
+		
+			}
+
+	nav ul li a{
+				
+				display: block;
+				width: 100%;
+				border: none;
+				border-radius: 0;
+				background: silver;
+				border-bottom:1px solid grey;
+				font-size: 1.3em;
+				color: black;
+				text-transform: uppercase;
+				font-family:Verdana,sans-serif;
+				
+				
+				
+				}
+
+
+	article{
+			float:none;
+			width:95%;
+		
+			}
+
+	main{
+			padding: 0 10px 0 10px;
+		
+			}
+
+
+	
+		aside{		/*speziell da nicht im main*/
+			
+			margin:0 10px 10px 10px;
+	
+			} 
+	
+											
+	aside img{
+				
+				min-width:150px;
+				width:20%;
+		
+				}						
+	
+	aside a{
+				font-size: 6vw;
+		
+			}
+	
+}		/* end mediaquery */
+
+/*Responsive Tablet*/
+@media only screen and (min-width:601px) and (max-width:1000px)
+{
+	.grid-box{
+				grid-template-columns: auto auto;	/*zweispaltig*/
+				grid-template-rows:80px 40px auto 60px;
+				grid-template-areas:
+				"kopf	kopf"
+				"nav	nav"
+				"m		m"
+				"f		f";
+															
+				}
+	
+	
+	
+	aside{
+			display:none;
+			
+			
+			}
+	
+}
+
+/* Responsive Desktop alle Fenster größer 10001px*/
+@media only screen and (min-width:1001px)
+{
+	
+	
+	
+	
+}

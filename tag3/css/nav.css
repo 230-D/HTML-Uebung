@@ -1,0 +1,18 @@
+nav a{/* inline Element*/
+		display: inline-block; /*wird zum Block Element*/
+		background-color: rgba(0, 0, 0, 0.10);
+		text-decoration: none;
+		padding: 0 5px 0 5px;
+		border-radius: 5px;
+		border:2px solid white;
+		color:saddlebrown;
+		box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+		margin-right: 10px;/*Abstand zum nächsten Button*/
+		}
+
+nav:hover{
+			background: green;
+			color: white;
+			transform: scale(1);
+
+			}

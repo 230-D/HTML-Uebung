@@ -1,0 +1,213 @@
+@font-face{
+	
+			font-family:"meineschrift";
+			src: url("../fonts/ComicNeue-Bold.ttf");
+	
+	
+			}
+
+
+*{			/*für alle Elemente gilt außer h1*/
+	
+	margin:0;
+	box-sizing:borderbox;
+	
+	}
+
+.grid-box{
+	
+			width: 100vw;								/*View width Browserbreite*/
+			height: 100vh;								/*View height Browserhöhe*/
+			display: grid;
+			grid-template-columns: auto auto 150px;		/*Horizontal/Spalten*/
+			grid-template-rows:	80px 40px auto 60px;	/*Vertikal/Zeilen*/
+			grid-template-areas:
+			"kopf	kopf	kopf"
+			"nav	nav		nav"
+			"m		m 		aside"
+			"f		f		f";
+
+			}
+			
+			
+header{
+	
+		grid-area:kopf;
+		/*background-color: blue;*/
+		
+		}
+		
+nav{
+		grid-area: nav;
+		/*background-color: yellow;*/
+		background:url(../img/back_1.jpg) no-repeat center -20px;
+		background-size:cover;
+	}		
+	
+main{
+		grid-area: m;
+		/*background-color:silver;*/
+		background:url(../img/backcenter.jpg) no-repeat center center;
+		background-size:cover;
+	}	
+
+aside{
+		grid-area: aside;
+		/*background-color:green;*/
+		background:url(../img/back_3.jpg) no-repeat center center;
+		/*background-size:cover;*/
+		}
+		
+footer{
+	
+		grid-area:f;
+		/*background-color:brown;*/
+	
+		}
+
+body{
+		
+		background:url(../img/backcenter_1.webp) no-repeat center -20px;
+		background-size:cover;
+		padding: 0 10px 0 0;
+		
+		
+		}
+
+
+header{
+		background:url(../img/backcenter_1.webp) no-repeat center -20px;
+		background-size:cover;
+		/*filter:blur(5px);*/
+		
+		}
+
+footer{
+		background:url(../img/backcenter_1.webp) no-repeat center center;
+		background-size:cover;
+		/*filter:sepia(100%);*/
+		box-shadow: 0px 0px 0px 30px rgb(0, 0, 0);
+		color:white;
+		text-align:center;		/*Text ist zentriert*/
+		
+		
+		}
+footer span{
+			background-color:rgba(0, 0, 0, 0.5);
+			padding: 10px 10px 10px 10px;
+			border-radius: 15px;
+			box-shadow:0 0 10px #000;
+			}
+
+footer span{
+			color:white;
+	
+			}
+
+
+header{
+		
+		padding:15px 0 0 15px;	/*innen Abstand*/
+		box-shadow:0 5px 30px #lime;
+		
+		}
+
+header h1{
+			font-family:"meineschrift", cursive;
+			margin:0;
+			color:green;
+			font-size:2.3rem; /*1rem = 16px*/
+			margin:0;
+			text-shadow:
+			0 0 5px #fff,
+			0 0 10px #fff,
+			0 0 15px #fff,
+			0 0 20px #lime,
+			0 0 25px #lime,
+			0 0 30px #lime
+			;
+	
+	
+			}
+	
+main{
+	
+		padding:0 0 0 30px;
+	
+	}	
+	
+article{
+		float:left;
+		width:45%;
+		min-height:300px;
+		background: rgba(255, 255, 255, 0.8);
+		margin: 0 5px 5px 0;		/*Abstand unten*/
+		padding: 5px 5px 5px 10px;
+		border-radius:10px;
+	
+	
+		}	
+	
+article h2{
+			font-family:"meineschrift", cursive;
+			letter-spacing: 0.13rem; /*Buchstaben*/
+			margin:3px 0 0 3px;
+			
+	
+			}	
+	
+article img{
+				width:50%;
+				float:left;
+				margin:0 5px 0 0;
+				border:1px solid lime;
+				transition: all 0.3s;	/*animation*/
+				cursor: pointer;
+			}	
+	
+article img:hover{
+	
+		transform: scale(1.5);
+	
+		}	
+		
+aside a{
+			
+			color: black;
+			
+	
+		}		
+		
+aside a:hover{
+				font-size:1.2rem;
+				color:blue;
+				text-shadow: 
+				0 0 5px #fff,
+				0 0 10px #fff,
+				0 0 15px #fff,
+				0 0 20px #fff
+				;
+	
+				}
+
+		
+aside{
+		
+		min-width: 170px;
+		background:rgba(255, 255, 255, 0.5);
+		padding:10px 10px 10px 10px;
+		border-radius:10px;
+		margin: 0 10px 0 0;
+		
+		}
+
+aside img{
+			
+			min-width:150px;
+			width:100%;
+			margin-bottom:5px;
+			border-radius:10px;
+			
+	
+			}
+	
